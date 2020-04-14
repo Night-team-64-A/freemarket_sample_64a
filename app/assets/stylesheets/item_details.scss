@@ -1,0 +1,47 @@
+
+
+.main{
+  background-color: #f5f5f5;
+  .itemContainer{
+    .itemMainContent{
+      display: flex;
+      &__image{
+        border: solid 1px black;
+        margin-right: 20px;
+        .detailImage{
+          width: 300px;
+        }
+      }
+      &__info{
+        .infoTable{
+          table{
+            min-width: 400px;
+            min-height: 500px;
+            tr{
+              th{
+                border: solid 1px #d3d3d3;
+                width: 40%;
+                padding: 5px 10px;
+              }
+              td{
+                border: solid 1px #d3d3d3;
+                background-color: #fff;
+                width: 60%;
+                padding: 5px 10px;
+              }
+            }
+            .seller{
+              height: 20%;
+            }
+            .category{
+              height: 20%;
+            }
+
+
+          }
+        }
+      }
+
+    }
+  }
+}
