@@ -1,52 +1,51 @@
-.main
-  .itemContainer
-    .itemName
-      = @item.name
-    .itemMainContent
-      .itemMainContent__image
-        = image_tag @item.images[0].image_url.url, class: "detailImage"
-      .itemMainContent__info
-        .infoTable
-          %table
-            %tr.seller
-              %th
-                出品者
-              %td
-                = @item.user.nickname
-            %tr.category
-              %th
-                カテゴリー
-              %td
-                = @item.category.name
+.itemContainer
+  .itemName
+    = @item.name
+  .itemMainContent
+    .itemMainContent__image
+      = image_tag @item.images[0].image_url.url, class: "detailImage"
+    .itemMainContent__info
+      .infoTable
+        %table
+          %tr.seller
+            %th
+              出品者
+            %td
+              = @item.user.nickname
+          %tr.category
+            %th
+              カテゴリー
+            %td
+              = @item.category.name
 
-            %tr
-              %th
-                ブランド(table不在)
-              %td
-                ヒロシ
-            %tr
-              %th
-                商品状態(table不在)
+          %tr
+            %th
+              ブランド(table不在)
+            %td
+              ヒロシ
+          %tr
+            %th
+              商品状態(table不在)
 
-              %td
-                ヒロシ
-            %tr
-              %th
-                配送料の負担(table不在)
-              %td
-                ヒロシ
-            %tr
-              %th
-                配送日の目安(table不在)
-              %td
-                ヒロシ
-    .price
-      %span
-      ￥
-      %span
-        = @item.price
-      %span
-      （税込）
-    .purchaseBtn
-    .description
-      = @item.description
+            %td
+              ヒロシ
+          %tr
+            %th
+              配送料の負担(table不在)
+            %td
+              ヒロシ
+          %tr
+            %th
+              配送日の目安(table不在)
+            %td
+              ヒロシ
+  .price
+    %span
+    ￥
+    %span
+      = @item.price
+    %span
+    （税込）
+  .purchaseBtn
+  .description
+    = @item.description
