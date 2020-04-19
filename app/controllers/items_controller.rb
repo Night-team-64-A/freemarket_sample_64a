@@ -33,6 +33,9 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
+    @parents = @item.category.parent
+    @category = @parents.parent
+
   end
   
   def search
