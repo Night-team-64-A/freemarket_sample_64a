@@ -21,9 +21,10 @@
             %th
               カテゴリー
             %td
-              %p= @category.name
-              %p= @parents.name
-              %p= @item.category.name
+              = @item.category.name
+              = @parents.name
+              = @category.name
+
           %tr
             %th
               ブランド
