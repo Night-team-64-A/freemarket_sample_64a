@@ -33,29 +33,19 @@
             %th
               商品状態
             %td
-<<<<<<< HEAD
               = @item.condition.name
-=======
-              テーブル不在
->>>>>>> 5c3f2bd4ca551e2ad332fbe1bd748ea08cfb7d02
+
           %tr
             %th
               配送料の負担
             %td
-<<<<<<< HEAD
               = @item.shippingpayer.name
-=======
-              テーブル不在
->>>>>>> 5c3f2bd4ca551e2ad332fbe1bd748ea08cfb7d02
           %tr
             %th
               配送日の目安
             %td
-<<<<<<< HEAD
               = @item.shipping_day.name
-=======
-              テーブル不在
->>>>>>> 5c3f2bd4ca551e2ad332fbe1bd748ea08cfb7d02
+
   .price
     = number_to_currency(@item.price, unit: "￥", format: "%u %n")
     %span.taxPostageIncluded （税込/送料込み）
