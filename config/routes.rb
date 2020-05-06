@@ -24,5 +24,10 @@ Rails.application.routes.draw do
       post 'delete', to: 'credits#delete'
     end
   end
+  resources :mypage
+  # ログアウト
+  devise_scope :social_account do
+    get 'sign_out', to: "sessions#destroy"
+  end
 end
 
